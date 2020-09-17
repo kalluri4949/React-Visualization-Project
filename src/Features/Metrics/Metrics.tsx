@@ -96,7 +96,7 @@ const Metrics: React.FC = () => {
         </Select>
       </Grid>
       {selectedMetrics.map(selectedMetric => (
-        <Grid item xs={6}>
+        <Grid item xs={6} key={`${selectedMetric}`}>
           <Grid className={classes.grid} container spacing={3}>
             <Grid className={classes.grid} item xs={12}>
               <MetricTile metric={selectedMetric} />
